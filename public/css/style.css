@@ -6,6 +6,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/****** INDEX PAGE ******/
 .jumbotron {
     background-image: url('https://i.pinimg.com/564x/64/b8/cc/64b8cccd3b19192ed733c1f8a2421dc0.jpg');
     background-size: cover;
@@ -49,4 +51,12 @@
 .thumb-img {
     height: 200px;
     width: 200px;
+}
+/****** SHOW PAGE ******/
+.show-bg-img {
+    border: 1px black solid;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/564x/40/09/c7/4009c7459bfc4e1a07ac087766daac55.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }

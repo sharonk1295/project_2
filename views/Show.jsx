@@ -6,7 +6,7 @@ class Show extends React.Component {
         const {item} = this.props;
         return(
             <Layout>
-                <div>
+                <div className="show-bg-img">
                     <a href='/items'>Back to Main Page</a>
                     <h1>{item.name}</h1>
                 </div>
