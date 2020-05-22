@@ -12,17 +12,20 @@ itemController.get('/', (req, res) => {
     res.render('Index')
 })
 
+// NEW 
+itemController.get('/add', (req,res) => {
+    res.send('add a new item/product')
+})
 
 // SHOW
-
-
-
-// NEW 
-
-
+itemController.get('/:id', (req,res) => {
+    res.send('I am an items show page')
+})
 
 // EDIT
-
+itemController.get('/edit/:id', (req,res) => {
+    res.send('edit by adding some opinions on the product')
+})
 
 
 
