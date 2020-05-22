@@ -1,8 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&family=Clicker+Script&family=Codystar&family=Jacques+Francois+Shadow&family=Spirax');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-h1 {
-    color: thistle;
+.jumbotron {
+    background-image: url('https://i.pinimg.com/564x/64/b8/cc/64b8cccd3b19192ed733c1f8a2421dc0.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    /* position: absolute;
+    width: inherit; */
+}
+.header-text {
+    text-align: center;
+}
+.header-text>h1 {
+    color: rgb(36, 11, 59);
+    /* font-family: 'Clicker Script', cursive; */
+    font-family: 'Spirax', cursive;
+    /* font-family: 'Cherry Swash', cursive; */
+    /* font-family: 'Jacques Francois Shadow', cursive; */
+    font-size: 80px;
+    font-weight: 600;
+    text-shadow: 2px 2px rgb(233, 210, 229);
+}
+.header-text>p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+    background-color: thistle;
+    font-family: 'Codystar', cursive;
+    border: purple;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+.btn:hover {
+    background-color: rebeccapurple;
+    transform: translate(-2px, 3px);
 }
