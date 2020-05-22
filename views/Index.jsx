@@ -18,7 +18,7 @@ class Index extends React.Component {
                         {items.map((item, index) => {
                             return (
                                 <div className="thumbnail">
-                                    <img src={item.img}/>
+                                    <img className="thumb-img" src={item.img}/>
                                     <div className="caption">
                                         <h3>{item.name}</h3>
                                         <p>Brand: {item.brand}</p>

@@ -42,3 +42,11 @@
     background-color: rebeccapurple;
     transform: translate(-2px, 3px);
 }
+.thumbnail {
+    border: thistle 2px solid;
+    text-align: center;
+}
+.thumb-img {
+    height: 200px;
+    width: 200px;
+}
