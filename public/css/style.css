@@ -31,14 +31,14 @@
 .header-text>p {
     font-family: Arial, Helvetica, sans-serif;
 }
-.btn {
+#header-btn {
     background-color: thistle;
     font-family: 'Codystar', cursive;
     border: purple;
     font-weight: 550;
     letter-spacing: 1px;
 }
-.btn:hover {
+#header-btn:hover {
     background-color: rebeccapurple;
     transform: translate(-2px, 3px);
 }

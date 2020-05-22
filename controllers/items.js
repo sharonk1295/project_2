@@ -9,12 +9,18 @@ const Item = require('../models/items.js');
 
 // INDEX
 itemController.get('/', (req, res) => {
-    res.render('Index')
+    Item.find({}, (error, allItems) => {
+        const props = {
+            items: allItems
+        }
+        res.render('Index', props)
+    })
 })
 
 // NEW 
 itemController.get('/add', (req,res) => {
-    res.send('add a new item/product')
+    // res.send('add a new item/product')
+    res.render('New')
 })
 
 // SHOW
@@ -32,7 +38,11 @@ itemController.get('/edit/:id', (req,res) => {
 // ========= FUNCTIONAL ROUTES ========= //
 
 // CREATE
-
+itemController.post('/', (req,res) => {
+    Item.create(req.body, (error, newItem) => {
+        res.redirect('/items');
+    })
+})
 
 
 // UPDATE
