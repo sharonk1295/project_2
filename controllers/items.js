@@ -25,7 +25,13 @@ itemController.get('/add', (req,res) => {
 
 // SHOW
 itemController.get('/:id', (req,res) => {
-    res.send('I am an items show page')
+    // res.send('I am an items show page')
+    Item.findById(req.params.id, (error, foundItem) => {
+        const props = {
+            item: foundItem
+        }
+        res.render('Show', props);
+    })
 })
 
 // EDIT

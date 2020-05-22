@@ -18,7 +18,7 @@ class New extends React.Component {
                         <input type="submit" name="" value="Add Item"/>
                     </form>
                 </div>
-                <a href="/items"><button>Back To Main Page</button></a>
+                <a href="/items">Back To Main Page</a>
             </Layout>
         )
     }

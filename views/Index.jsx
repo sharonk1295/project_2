@@ -23,7 +23,7 @@ class Index extends React.Component {
                                         <h3>{item.name}</h3>
                                         <p>Brand: {item.brand}</p>
                                         <p>Type: {item.type}</p>
-                                        <p><a href={`/items/${item._id}`} className="btn btn-primary" role="button">See More Info</a></p>
+                                        <p><a href={`/items/${item._id}`} className="btn btn-outline-info" role="button">See More Info</a></p>
                                     </div>
                                 </div>
                             )

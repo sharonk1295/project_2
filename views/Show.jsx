@@ -3,9 +3,13 @@ const Layout = require('./components/Layout.jsx')
 
 class Show extends React.Component {
     render() {
+        const {item} = this.props;
         return(
             <Layout>
-                <h1>hello its working</h1>
+                <div>
+                    <a href='/items'>Back to Main Page</a>
+                    <h1>{item.name}</h1>
+                </div>
             </Layout>
         )
     }
