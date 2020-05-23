@@ -13,23 +13,25 @@ class Index extends React.Component {
                         <a className="btn btn-primary btn-lg" id="header-btn" href={`/items/add`} role="button">Add An Item</a>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-sm-6 col-md-4">
-                        {items.map((item, index) => {
-                            return (
-                                <div className="thumbnail">
-                                    <img className="thumb-img" src={item.img}/>
-                                    <div className="caption">
-                                        <h3>{item.name}</h3>
-                                        <p>Brand: {item.brand}</p>
-                                        <p>Type: {item.type}</p>
-                                        <p><a href={`/items/${item._id}`} className="btn btn-outline-info" role="button">See More Info</a></p>
+                <div className="container-fluid padding">
+                    <div className="row padding">
+                        <div className="col-md-9 card-deck">
+                            {items.map((item, index) => {
+                                return (
+                                    <div className="card">
+                                        <img className="card-img-top" src={item.img}/>
+                                        <div className="card-body">
+                                            <h3 className="card-title">{item.name}</h3>
+                                            <p className="card-text">Brand: {item.brand}</p>
+                                            <p className="card-text">Type: {item.type}</p>
+                                            <div className="card-footer"><a href={`/items/${item._id}`} className="btn btn-outline-info" role="button">See More Info</a></div>
+                                        </div>
                                     </div>
-                                </div>
-                            )
-                        })}
+                                )
+                            })}
+                        </div>
                     </div>
-                </div>
+                </div>  
             </Layout>
         )
     }

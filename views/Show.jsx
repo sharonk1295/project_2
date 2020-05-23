@@ -7,8 +7,18 @@ class Show extends React.Component {
         return(
             <Layout>
                 <div className="show-bg-img">
-                    <a href='/items'>Back to Main Page</a>
-                    <h1>{item.name}</h1>
+                    <div className="link"><a href='/items'>Back to Main Page</a></div>
+                    <div className="item-info">
+                        <h1>{item.name}</h1>
+                        <h3>Brand: {item.brand}</h3>
+                        <h3>Type: {item.type}</h3>
+                        <h3>Date Opened: {item.dateOpened}</h3>
+                        <h3>Expires in {item.expiresIn} months from opening date</h3>
+                        <p>Notes: {item.notes}</p>
+                    </div>
+                    <div className="btn-options">
+                        <a href={`/items/edit/${item._id}`}><button>Edit Item</button></a>
+                    </div>
                 </div>
             </Layout>
         )

@@ -44,13 +44,22 @@
     background-color: rebeccapurple;
     transform: translate(-2px, 3px);
 }
-.thumbnail {
-    border: thistle 2px solid;
-    text-align: center;
-}
-.thumb-img {
-    height: 200px;
+/* .card {
+    border: thistle 1px solid;
     width: 200px;
+    height: 210px;
+} */
+.card {
+    max-width: 400px;
+    max-height: 500px;
+    overflow: hidden;
+}
+.card-body {
+    text-align: center;
+    /* border: 1px thistle solid; */
+}
+.card-title {
+    width: 100%;;
 }
 /****** SHOW PAGE ******/
 .show-bg-img {
@@ -59,4 +68,24 @@
     background-image: url('https://i.pinimg.com/564x/40/09/c7/4009c7459bfc4e1a07ac087766daac55.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
+}
+.item-info {
+    display: inline-block;
+    margin: 20% auto;
+    border: thistle 1px solid;
+    background-color: white;
+    padding: 15px;
+}
+.btn-options {
+    margin-top: -15%;
+}
+.btn-options button {
+    background-color: thistle;
+    padding: 4px 6px;
+    border-radius: 3px;
+}
+.btn-options button:hover {
+    background-color: yellowgreen;
+    transition: all 0.7s;
 }

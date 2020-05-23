@@ -36,7 +36,13 @@ itemController.get('/:id', (req,res) => {
 
 // EDIT
 itemController.get('/edit/:id', (req,res) => {
-    res.send('edit by adding some opinions on the product')
+    // res.send('edit by adding some opinions on the product')
+    Item.findById(req.params.id, (error, foundItem) => {
+        const props = {
+            item: foundItem
+        }
+        res.render('Edit', props);
+    })
 })
 
 
