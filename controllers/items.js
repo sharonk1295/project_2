@@ -58,7 +58,11 @@ itemController.post('/', (req,res) => {
 
 
 // UPDATE
-
+itemController.put('/edit/:id', (req, res) => {
+    Item.findByIdAndUpdate(req.params.id, req.body, (error, updatedItem) => {
+        res.redirect('/items');
+    })
+})
 
 
 // DESTROY
