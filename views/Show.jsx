@@ -18,6 +18,9 @@ class Show extends React.Component {
                     </div>
                     <div className="btn-options">
                         <a href={`/items/edit/${item._id}`}><button>Edit Item</button></a>
+                        <form action={`/items/${item._id}?_method=DELETE`} method="POST">
+                            <input type="submit" value="Delete Item"/>
+                        </form>
                     </div>
                 </div>
             </Layout>

@@ -86,15 +86,24 @@
     padding: 15px 20px;
 }
 .btn-options {
-    margin-top: -5vh;
+    margin: 0 auto;
+    margin-top: -10vh;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: black solid 1px; */
+    width: 50vh;
 }
-.btn-options button {
+.btn-options button, input {
     background-color: rgba(212, 150, 212, 0.8);
     padding: 5px 9px;
     border-radius: 3px;
     font-size: 20px;
 }
 .btn-options button:hover {
+    background-color: yellowgreen;
+    transition: all 0.3s;
+}
+.btn-options input:hover {
     background-color: yellowgreen;
     transition: all 0.3s;
 }

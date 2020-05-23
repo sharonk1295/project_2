@@ -56,7 +56,6 @@ itemController.post('/', (req,res) => {
     })
 })
 
-
 // UPDATE
 itemController.put('/edit/:id', (req, res) => {
     Item.findByIdAndUpdate(req.params.id, req.body, (error, updatedItem) => {
@@ -64,9 +63,12 @@ itemController.put('/edit/:id', (req, res) => {
     })
 })
 
-
 // DESTROY
-
+itemController.delete('/:id', (req, res) => {
+    Item.findByIdAndRemove(req.params.id, (error, deletedItem) => {
+        res.redirect('/items');
+    })
+})
 
 
 module.exports = itemController;
