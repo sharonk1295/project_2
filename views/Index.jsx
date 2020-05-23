@@ -13,7 +13,7 @@ class Index extends React.Component {
                         <a className="btn btn-primary btn-lg" id="header-btn" href={`/items/add`} role="button">Add An Item</a>
                     </div>
                 </div>
-                <div className="container-fluid padding">
+                <div className="container-fluid padding card-items">
                     <div className="row padding">
                         <div className="col-md-9 card-deck">
                             {items.map((item, index) => {
