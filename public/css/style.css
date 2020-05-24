@@ -7,6 +7,45 @@
     box-sizing: border-box;
 }
 
+/****** HOME PAGE ******/
+.home-bg-img {
+    background-image: url('https://image.freepik.com/free-vector/watercolor-floral-background-with-soft-colors_52683-28620.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    z-index: 1;
+}
+.home-text {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 27vh;
+    text-align: center;
+    /* border: thistle 1px solid; */
+}
+.home-text>h1 {
+    font-size: 60px;
+    padding-bottom: 20px;
+    font-family: 'Jacques Francois Shadow', cursive;
+}
+.home-text>p {
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home-btn {
+    padding: 5px 6px;
+    background-color: rgba(212, 150, 212, 0.8);
+    border-radius: 6px;
+    font-family: 'Codystar', cursive;
+    color: white;
+}
+.home-btn:hover {
+    background-color: rgba(102, 51, 153, 0.8);
+    transform: translate(-2px, 3px);
+}
+
 /****** INDEX PAGE ******/
 .jumbotron {
     background-image: url('https://i.pinimg.com/564x/64/b8/cc/64b8cccd3b19192ed733c1f8a2421dc0.jpg');
@@ -62,6 +101,9 @@
     border: 1px solid black;
     flex-flow: wrap;
 } */
+.card-deck {
+    position: relative;
+}
 .card {
     width: 400px;
     height: 500px;
@@ -70,6 +112,11 @@
     overflow: hidden;
     border: pink 1px solid;
 }
+/* .card-img-top {
+    width: 80%;
+    height: 50%;
+    text-align: center;
+} */
 .card:hover {
     background-color: rgba(216, 191, 216, 0.3);
 }
@@ -79,6 +126,9 @@
 }
 .card-title {
     width: 100%;
+}
+.card-body a {
+    margin-bottom: 3px;
 }
 /****** SHOW PAGE ******/
 .link>a {

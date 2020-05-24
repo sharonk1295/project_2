@@ -15,7 +15,7 @@ class Index extends React.Component {
                 </div>
                 <div className="container-fluid padding card-items">
                     <div className="row padding">
-                        <div className="cold-md-12 card-deck">
+                        <div className="col-lg-12 card-deck">
                             {items.map((item, index) => {
                                 return (
                                     <div className="card">
@@ -24,7 +24,7 @@ class Index extends React.Component {
                                             <h3 className="card-title">{item.name}</h3>
                                             <p className="card-text">Brand: {item.brand}</p>
                                             <p className="card-text">Type: {item.type}</p>
-                                            <div className="card-footer"><a href={`/items/${item._id}`} className="btn btn-outline-info" role="button">See More Info</a></div>
+                                            <a href={`/items/${item._id}`} className="btn btn-outline-info" role="button">See More Info</a>
                                         </div>
                                     </div>
                                 )
