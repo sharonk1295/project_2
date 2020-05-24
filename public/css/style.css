@@ -58,17 +58,27 @@
     justify-content: center;
     flex-wrap: wrap;
 } */
+/* .card-deck {
+    border: 1px solid black;
+    flex-flow: wrap;
+} */
 .card {
-    max-width: 400px;
-    max-height: 500px;
+    width: 400px;
+    height: 500px;
+    /* min-width: 200px;
+    max-height: 300px; */
     overflow: hidden;
+    border: pink 1px solid;
+}
+.card:hover {
+    background-color: rgba(216, 191, 216, 0.3);
 }
 .card-body {
     text-align: center;
     /* border: 1px thistle solid; */
 }
 .card-title {
-    width: 100%;;
+    width: 100%;
 }
 /****** SHOW PAGE ******/
 .link>a {
@@ -137,13 +147,30 @@
     margin: 8px auto;
 }
 /******* NEW PAGE ********/
+.new-bg-img {
+    height: 103vh;
+    background: url('/img/skincare-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.new-bg-img>.link {
+    z-index: 2;
+}
 .add-item {
+    border: teal 2px solid;
+    background-color: rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: center;
     flex-flow: column wrap;
+    margin: 5vh 20vh;
+    /* padding: 5vh auto; */
+    z-index: 2;
 }
 .add-item>h1 {
     padding: 5px;
+    padding-top: 10px;
 }
 .add-item form {
     display: flex;
@@ -154,4 +181,5 @@
 }
 .add-item .add-btn {
     margin: 8px auto;
+    margin-bottom: 10px;
 }

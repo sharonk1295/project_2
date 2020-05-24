@@ -15,7 +15,7 @@ class Index extends React.Component {
                 </div>
                 <div className="container-fluid padding card-items">
                     <div className="row padding">
-                        <div className="col-md-9 card-deck">
+                        <div className="cold-md-12 card-deck">
                             {items.map((item, index) => {
                                 return (
                                     <div className="card">
