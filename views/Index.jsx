@@ -13,12 +13,12 @@ class Index extends React.Component {
                         <a className="btn btn-primary btn-lg" id="header-btn" href={`/items/add`} role="button">Add An Item</a>
                     </div>
                 </div>
-                <div className="container-fluid padding card-items">
+                <div className="container">
                     <div className="row">
-                        <div className="col-lg-12 card-deck">
+                        <div className="card-deck justify-content-center">
                             {items.map((item, index) => {
                                 return (
-                                    <div className="card">
+                                    <div className="card mb-5" style={{minWidth:"18rem", maxWidth:"18rem"}}>
                                         <img className="card-img-top" src={item.img}/>
                                         <div className="card-body">
                                             <h3 className="card-title">{item.name}</h3>
@@ -29,7 +29,7 @@ class Index extends React.Component {
                                     </div>
                                 )
                             })}
-                        </div>
+                        </div>    
                     </div>
                 </div>  
             </Layout>
