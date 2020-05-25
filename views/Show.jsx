@@ -15,7 +15,7 @@ class Show extends React.Component {
                             <h3>Type: {item.type}</h3>
                             <h3>Date Opened: {item.dateOpened}</h3>
                             <h3>Expires in {item.expiresIn} months from opening date</h3>
-                            <p>Notes: {item.notes}</p>
+                            <p><span>Notes:</span> {item.notes}</p>
                         </div>
                     </div>
                     <div className="btn-options">
