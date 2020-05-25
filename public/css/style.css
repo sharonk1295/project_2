@@ -60,7 +60,8 @@
     text-align: center;
 }
 .header-text>h1 {
-    text-shadow: 4px 3px rgb(231, 221, 230);
+    /* text-shadow: 4px 3px rgb(231, 221, 230); */
+    text-shadow: 2px 1px rgba(230, 183, 223, 0.9);
     font-family: 'Dancing Script', cursive;
     font-size: 93px;
     letter-spacing: 1px;
@@ -107,11 +108,6 @@
 .card-img-top {
     overflow: hidden;
 }
-/* .card-img-top {
-    width: 80%;
-    height: 50%;
-    text-align: center;
-} */
 .card:hover {
     /* background-color: rgba(216, 191, 216, 0.3); */
     transform: scale(1.11);
@@ -123,7 +119,6 @@
     /* border: 1px thistle solid; */
 }
 .card-title {
-    /* width: 100%; */
     overflow: hidden;
 }
 .card-body a {
