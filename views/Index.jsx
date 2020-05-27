@@ -18,7 +18,7 @@ class Index extends React.Component {
                         <div className="card-deck justify-content-center">
                             {items.map((item, index) => {
                                 return (
-                                    <div className="card mb-5" style={{minWidth:"18rem", maxWidth:"18rem"}}>
+                                    <div className="card mb-5 text-truncate" style={{minWidth:"18rem", maxWidth:"18rem"}}>
                                         <img className="card-img-top" src={item.img}/>
                                         <div className="card-body">
                                             <h3 className="card-title">{item.name}</h3>

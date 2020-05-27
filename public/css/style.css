@@ -60,23 +60,11 @@
     text-align: center;
 }
 .header-text>h1 {
-    /* text-shadow: 4px 3px rgb(231, 221, 230); */
-    text-shadow: 2px 1px rgba(230, 183, 223, 0.9);
+    text-shadow: 4px 3px rgba(231, 221, 230, 0.9);
     font-family: 'Dancing Script', cursive;
     font-size: 93px;
     letter-spacing: 1px;
     color: rgb(32, 31, 32);
-}
-/* .header-text span{
-    text-shadow: 0px 0px 5px rgb(211, 160, 168);
-    animation: blinking 3s infinite            
-} */
-@keyframes blinking{
-    0%{color: rgba(189, 94, 165, 0.9)}
-    25%{color: rgb(192, 151, 138)}
-    50%{color: rgba(189, 94, 165, 0.9)}
-    75%{color: rgb(192, 138, 147)}
-    100%{color: rgba(189, 94, 165, 0.9)}
 }
 .header-text>p {
     font-family: 'PT Serif', serif;
@@ -89,7 +77,6 @@
     border: purple;
     font-weight: 550;
     letter-spacing: 1px;
-    /* animation: blinking 3s infinite; */
 }
 #header-btn:hover {
     background-color: rgba(102, 51, 153, 0.9);
@@ -111,7 +98,6 @@
 .card:hover {
     /* background-color: rgba(216, 191, 216, 0.3); */
     transform: scale(1.11);
-    overflow: hidden;
 }
 .card-body {
     text-align: center;
@@ -120,10 +106,17 @@
 }
 .card-title {
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-.card-body a {
+.card-title:hover{
+    overflow: visible;
+    white-space: normal;
+    height: auto;
+}
+/* .card-body a {
     margin-bottom: 3px;
-}
+} */
 .card-body .btn {
     font-family: 'Codystar', cursive;
     font-weight: 600;
