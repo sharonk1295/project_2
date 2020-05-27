@@ -87,16 +87,15 @@
     flex-flow: row wrap;
 }
 .card {
-    /* width: 400px;
-    height: 500px; */
     overflow: hidden;
     border: pink 1px solid;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .card-img-top {
     overflow: hidden;
 }
 .card:hover {
-    /* background-color: rgba(216, 191, 216, 0.3); */
     transform: scale(1.11);
 }
 .card-body {
@@ -114,9 +113,6 @@
     white-space: normal;
     height: auto;
 }
-/* .card-body a {
-    margin-bottom: 3px;
-} */
 .card-body .btn {
     font-family: 'Codystar', cursive;
     font-weight: 600;

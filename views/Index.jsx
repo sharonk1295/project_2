@@ -19,8 +19,8 @@ class Index extends React.Component {
                             {items.map((item, index) => {
                                 return (
                                     <div className="card mb-5 text-truncate" style={{minWidth:"18rem", maxWidth:"18rem"}}>
-                                        <img className="card-img-top" src={item.img}/>
                                         <div className="card-body">
+                                            <img className="card-img-top" src={item.img}/>
                                             <h3 className="card-title">{item.name}</h3>
                                             <p className="card-text">Brand: {item.brand}</p>
                                             <p className="card-text">Type: {item.type}</p>
